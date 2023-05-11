@@ -3,10 +3,20 @@
     //Peça ao usuário para informar três números e diga, ao final do programa, qual dos três é o maior número.
 
     //ENTRADA
-
+    const numeros = Number(prompt('Informe um número inteiro:'))
+    const numeros2 = Number(prompt('Informe outro número inteiro diferente do primeiro:'))
+    const numeros3 = Number(prompt('Informe um terceiro número inteiro:'))
 
     //PROCESSAMENTO
-
+    if(numeros > numeros2 && numeros > numeros3) {
+        alert(`O número ${numeros} é maior que ${numeros2} e maior que ${numeros3}`)
+    }
+     else if(numeros2 > numeros && numeros2 > numeros3 ){
+        alert(`O número ${numeros2} é maior que ${numeros} e maior que ${numeros3}`)
+    }
+     else if(numeros3 > numeros && numeros3 > numeros2){
+        alert(`O número ${numeros3} é maior que ${numeros2} e maior que ${numeros}`)
+     }
 
     //SAÍDA
 

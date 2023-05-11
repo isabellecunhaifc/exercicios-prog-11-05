@@ -3,10 +3,19 @@
     //Peça para o usuário informar dois números e diga, ao final do programa, qual dos dois é o maior número.
 
     //ENTRADA
-
+    const numeros = Number(prompt('Informe um número inteiro:'));
+    const numeros2 = Number(prompt('Informe outro número inteiro diferente do primeiro:'));
 
     //PROCESSAMENTO
-
+    if(numeros > numeros2) {
+        alert(`O número ${numeros} é maior que ${numeros2}`)
+    }
+     else if(numeros < numeros2){
+        alert(`O número ${numeros2} é maior que ${numeros}`)
+    }
+     else {
+        alert(`O número ${numeros} é igual o número ${numeros2}`)
+    }
 
     //SAÍDA
 

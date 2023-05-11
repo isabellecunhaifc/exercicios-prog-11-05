@@ -3,11 +3,15 @@
     //Peça para o usuário informar a sua idade e diga, ao final do programa, se ele pode ou não votar.
 
     //ENTRADA
-
+    const votar = Number(prompt('Informe a sua idade:'));
 
     //PROCESSAMENTO
-
-
+    if(votar < 16){
+        alert(`Você ainda não pode votar e tem ${votar} anos`);
+    }
+    else if(votar >= 16){
+        alert(`Você já pode votar e tem ${votar} anos`);
+    }
     //SAÍDA
 
 </script>
