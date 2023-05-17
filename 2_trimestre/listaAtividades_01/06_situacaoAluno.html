@@ -6,11 +6,23 @@
     //- Se a média for maior ou igual a 6: Aprovado
 
     //ENTRADA
-
+    const media = Number(prompt('Informe a nota do primeiro trimestre:').replace(",", "."))
+    const media2 = Number(prompt('Informe a nota do segundo trimestre:').replace(",", ".")) 
+    const media3 = Number(prompt('Informe a nota do terceiro trimestre:').replace(",", "."))
 
     //PROCESSAMENTO
-
+    const conta = Number(media) + Number(media2) + Number(media3)
+    const resultado = Number(conta)/3
 
     //SAÍDA
+    if(resultado < 4){
+        alert(`A sua média foi ${resultado.toFixed(1)} e você foi reprovado!`)
+    }
+    else if(resultado < 6){
+        alert(`A sua média foi ${resultado.toFixed(1)} e você está de exame!`)
+    }
+    else{
+        alert(`Asua média foi ${resultado.toFixed(1)} e você foi aprovado!`)
+    }
 
 </script>
